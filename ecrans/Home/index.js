@@ -10,7 +10,8 @@ import React from "react";
 
 import dashboardStyles from "./style.js";
 import { FakeActivity } from "../../fakeData/fakeActivity.js";
-import SVG_HOSPITAL from "../../assets/imgs/svg/undraw_medicine_b-1-ol.svg";
+import ActivityItem from "../../composantes/ActivityItem/index.js";
+// import SVG_HOSPITAL from "../../assets/imgs/svg/undraw_medicine_b-1-ol.svg";
 const Home = () => {
   return (
     <ScrollView>
@@ -35,11 +36,12 @@ const Home = () => {
         style={dashboardStyles.scrollableList}
         renderItem={({ item }) => {
           return (
-            <TouchableOpacity style={dashboardStyles.scrollableListItem}>
-              <SVG_HOSPITAL width={60} height={60} />
-              <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
-              <Text style={dashboardStyles.subText}>{item.subText}</Text>
-            </TouchableOpacity>
+            <ActivityItem />
+            // <TouchableOpacity style={dashboardStyles.scrollableListItem}>
+            //   <SVG_HOSPITAL width={60} height={60} />
+            //   <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
+            //   <Text style={dashboardStyles.subText}>{item.subText}</Text>
+            // </TouchableOpacity>
           );
         }}
       />
