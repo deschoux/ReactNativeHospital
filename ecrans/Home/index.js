@@ -1,9 +1,16 @@
-import { View, Text, ScrollView, Image, FlatList } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  Image,
+  FlatList,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
 
 import dashboardStyles from "./style.js";
 import { FakeActivity } from "../../fakeData/fakeActivity.js";
-// import SVG_HOSPITAL from "../../assets/imgs/svg/undraw_medicine_b-1-ol.svg";
+import SVG_HOSPITAL from "../../assets/imgs/svg/undraw_medicine_b-1-ol.svg";
 const Home = () => {
   return (
     <ScrollView>
@@ -28,12 +35,12 @@ const Home = () => {
         style={dashboardStyles.scrollableList}
         renderItem={({ item }) => {
           return (
-            <ActivityItem item={item} />
-            // <TouchableOpacity style={dashboardStyles.scrollableListItem}>
-            //   <SVG_HOSPITAL width={48} height={48} />
-            //   <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
-            //   <Text style={dashboardStyles.subText}>{item.subText}</Text>
-            // </TouchableOpacity>
+            // <ActivityItem item={item} />
+            <TouchableOpacity style={dashboardStyles.scrollableListItem}>
+              <SVG_HOSPITAL width={48} height={48} />
+              <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
+              <Text style={dashboardStyles.subText}>{item.subText}</Text>
+            </TouchableOpacity>
           );
         }}
       />

@@ -1,4 +1,4 @@
-import { Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity, ActivityItem } from "react-native";
 import React from "react";
 import SVG_HOSPITAL from "./../../assets/imgs/svg/undraw_medicine_b-1-ol.svg";
 import styles from "./style";
