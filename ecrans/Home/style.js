@@ -25,23 +25,32 @@ const dashboardStyles = StyleSheet.create({
     paddingVertical: PADDING.vertical,
   },
 
-  scrollableListItem: {
-    flexDirection: "column",
-    paddingHorizontal: 15,
-    paddingVertical: 15,
-    marginRight: 15,
-    backgroundColor: "white",
-    elevation: 1,
+  title: {
+    paddingHorizontal: PADDING.paddingHorizontal,
+    paddingVertical: PADDING.paddingVertical,
   },
 
-  mainText: {
+  titleBold: {
     fontWeight: "bold",
-    fontSize: 16,
   },
-  subText: {
-    marginTop: 10,
-    fontSize: 12,
-  },
+
+  // scrollableListItem: {
+  //   flexDirection: "column",
+  //   paddingHorizontal: 15,
+  //   paddingVertical: 15,
+  //   marginRight: 15,
+  //   backgroundColor: "white",
+  //   elevation: 1,
+  // },
+
+  // mainText: {
+  //   fontWeight: "bold",
+  //   fontSize: 16,
+  // },
+  // subText: {
+  //   marginTop: 10,
+  //   fontSize: 12,
+  // },
 });
 
 export default dashboardStyles;
