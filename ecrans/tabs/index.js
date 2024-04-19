@@ -1,7 +1,7 @@
 import { View, Text, Settings } from "react-native";
 import React from "react";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import Home from "../Maison";
+import Home from "../Home";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import Messages from "../Messages";
 import Setting from "../Setting";
