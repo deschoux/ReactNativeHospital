@@ -12,7 +12,7 @@ const BottomTabs = () => {
     <Tab.Navigator
       initialRouteName="tabs_home"
       screenOptions={{
-        tabBarActiveTintColor: "#e91e63",
+        tabBarActiveTintColor: "#5160ed",
         headerShown: false,
       }}
     >
