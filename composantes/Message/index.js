@@ -5,7 +5,7 @@ import styles from "./style";
 const Message = ({ item }) => {
   return (
     <View style={styles.container}>
-      <Text>index</Text>
+      <Text>{item.message}</Text>
     </View>
   );
 };
