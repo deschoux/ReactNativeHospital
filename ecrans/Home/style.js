@@ -7,7 +7,7 @@ const dashboardStyles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     paddingHorizontal: PADDING.horizontal,
-    paddingVertical: PADDING.vertical + 50,
+    paddingVertical: PADDING.vertical + 40,
     backgroundColor: "white",
   },
   userImg: {
@@ -83,9 +83,10 @@ const dashboardStyles = StyleSheet.create({
 
   // Définir les styles pour le conteneur
   doctorSpecContainer: {
+    width: 150,
     borderRadius: 15,
     backgroundColor: COLORS.main, // Assurez-vous que COLORS.main est défini quelque part dans vos styles globaux
-    padding: 6,
+    padding: 8,
     paddingHorizontal: PADDING.horizontal, // Assurez-vous que PADDING.horizontal est correctement défini
   },
 

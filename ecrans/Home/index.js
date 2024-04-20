@@ -13,7 +13,9 @@ import dashboardStyles from "./style.js";
 import { FakeActivity } from "../../fakeData/fakeActivity.js";
 import { FakeSymptome } from "../../fakeData/fakeSymptome.js";
 import { FakeDoctor } from "../../fakeData/fakeDoctor.js";
-// import SVG_HOSPITAL from "../../assets/imgs/svg/undraw_medicine_b-1-ol.svg";
+// a enlever si photos fonctionnent SVG_MEDECIN
+// import SVG_MEDECIN from "../../assets/imgs/svg/medecin.svg";
+
 const Home = () => {
   return (
     <ScrollView>
@@ -37,14 +39,7 @@ const Home = () => {
         showsHorizontalScrollIndicator={false}
         style={dashboardStyles.scrollableList}
         renderItem={({ item }) => {
-          return (
-            <ActivityItem item={item} />
-            // <TouchableOpacity style={dashboardStyles.scrollableListItem}>
-            //   <SVG_HOSPITAL width={48} height={48} />
-            //   <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
-            //   <Text style={dashboardStyles.subText}>{item.subText}</Text>
-            // </TouchableOpacity>
-          );
+          return <ActivityItem item={item} />;
         }}
       />
 
@@ -81,34 +76,34 @@ const Home = () => {
       </View>
 
       <View style={dashboardStyles.doctorsContainer}>
-        {FakeDoctor.map((doctor, index) => {
+        {/* a enlever si on veut la liste de tous les medecins .splice(0, 4) */}
+        {FakeDoctor.splice(0, 4).map((doctor, index) => {
           return (
             <TouchableOpacity
               key={doctor.id}
               style={dashboardStyles.doctorCard}
             >
               <Image
-                source={{ uri: "${doctor.img}" }}
+                source={{ uri: doctor.img }}
                 style={dashboardStyles.doctorImg}
               />
+
+              {/* Enlever SVG MEDECIN si image
+              {/* <SVG_MEDECIN width={48} height={48} /> */}
 
               <View style={dashboardStyles.doctorInfoContainer}>
                 <Text style={dashboardStyles.doctorName}>
                   {doctor.fullname}
                 </Text>
+
                 <View style={dashboardStyles.doctorSpecContainer}>
                   <Text style={dashboardStyles.doctorSpecText}>
                     {doctor.speciality}
                   </Text>
                 </View>
               </View>
-
-              {/* <Text style={dashboardStyles.doctorSpec}>
-                  {doctor.speciality}
-                </Text>
-              </View> */}
             </TouchableOpacity>
-          ); // Assurez-vous que chaque élément a une clé unique et que `doctor.name` est la propriété correcte.
+          ); //
         })}
       </View>
     </ScrollView>

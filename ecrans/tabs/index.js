@@ -20,7 +20,7 @@ const BottomTabs = () => {
         name="home"
         component={Home}
         options={{
-          tabBarLabel: "Dashboard",
+          tabBarLabel: "Accueil",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
           ),

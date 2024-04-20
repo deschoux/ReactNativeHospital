@@ -15,16 +15,13 @@
 //     </TouchableOpacity>
 //   );
 // };
+// ci dessus bon code pour afficher les photos de mon dossier assets
 
 // export default SymptomeItem;
 import React from "react";
 import { TouchableOpacity, Image, Text, View } from "react-native";
 import styles from "./style";
 
-// Vous ne pouvez pas faire un import dynamique comme ceci:
-// import SVG_HOSPITAL from ("./../../assets/imgs/${props.item.imgSymptome");
-
-// Mais vous pouvez utiliser une fonction pour retourner le bon require selon une prop
 const getImage = (imageName) => {
   switch (imageName) {
     case "symptome1":
