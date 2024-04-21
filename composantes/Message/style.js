@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     margin: 5,
     padding: 10,
     borderRadius: 10,
+    maxWidth: "90%",
   },
 });
 

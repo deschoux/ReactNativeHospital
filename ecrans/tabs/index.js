@@ -41,7 +41,7 @@ const BottomTabs = () => {
         name="settings"
         component={Setting}
         options={{
-          tabBarLabel: "Paramètre",
+          tabBarLabel: "Personnel",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons
               name="account-settings"
