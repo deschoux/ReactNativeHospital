@@ -24,13 +24,8 @@ npm-debug.*
 yarn-debug.*
 yarn-error.*
 
-echo "# ReactNativeHospital" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/deschoux/ReactNativeHospital.git
-git push -u origin main
+
+
 
 # macOS
 .DS_Store
