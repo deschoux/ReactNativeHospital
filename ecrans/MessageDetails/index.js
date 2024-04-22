@@ -14,15 +14,6 @@ const MessageDetails = ({ route, navigation }) => {
   }, []);
 
   return (
-    // <View
-    //   style={{
-    //     flex: 1,
-    //     alignItems: 40,
-    //     justifyContent: 40,
-    //     padding: 10,
-    //     marginTop: 1,
-    //   }}
-    // >
     <View style={{ flex: 1 }}>
       <FlatList
         data={fakeConversation}
