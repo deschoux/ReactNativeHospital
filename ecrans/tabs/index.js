@@ -56,3 +56,16 @@ const BottomTabs = () => {
 };
 
 export default BottomTabs;
+
+// const BottomTabs = () => {
+//   const Tab = createMaterialBottomTabNavigator();
+//   return (
+//     <Tab.Navigator
+//       initialRouteName="tabs_home"
+//       screenOptions={{
+//         tabBarActiveTintColor: "#ffffff", // Couleur des icônes et du texte actifs
+//         tabBarInactiveTintColor: "#b0b0b0", // Couleur des icônes et du texte inactifs
+//         tabBarColor: "#5160ed", // Couleur de fond de la barre des onglets
+//         headerShown: false,
+//       }}
+//     >

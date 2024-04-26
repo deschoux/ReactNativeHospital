@@ -29,6 +29,7 @@ const Home = () => {
       </View>
 
       {/* Liste des activités */}
+
       <FlatList
         data={FakeActivity}
         keyExtractor={(item) => item.id.toString()}
